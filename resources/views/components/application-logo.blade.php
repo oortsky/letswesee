@@ -1,0 +1,1 @@
+<span class="text-4xl font-black font-serif" {{ $attributes }}>Let'sWeSee</span>
