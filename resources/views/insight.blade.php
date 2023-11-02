@@ -31,7 +31,7 @@
             </div>
           </h1>
           <small>
-            <a href="/insight?author={{ $posts[0]->author->username }}">{{ $posts[0]->author->name }}</a>
+            <a href="/insight?author={{ $posts[0]->author->email }}">{{ $posts[0]->author->name }}</a>
             • {{ $posts[0]->created_at->diffForHumans() }}
           </small>
           <p class="mb-5">{{ $posts[0]->excerpt }}</p>
@@ -53,7 +53,7 @@
               <a href="/insight?category={{ $post->category->slug }}">{{ $post->category->name }}</a>
             </div>
             <small>
-              <a href="/insight?author={{ $post->author->username }}">{{ $post->author->name }}</a>
+              <a href="/insight?author={{ $post->author->email }}">{{ $post->author->name }}</a>
               • {{ $post->created_at->diffForHumans() }}
             </small>
             <p>{{ $post->excerpt }}</p>
